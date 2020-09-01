@@ -1,5 +1,7 @@
 #Requires -Version 7.0
 
+# My time-limited take on the challenge. Maybe I will add more later time permitting!
+
 ######################################################
 ######################################################
 #### Get-TriangleMissingLength function
@@ -33,9 +35,6 @@ function Get-TriangleMissingLength {
     }
 }
 
-Get-TriangleMissingLength -SideA -3 -SideB 4.9921 -Angle 90.03
-
-
 ######################################################
 ######################################################
 #### Get-AreaOfCircle function
@@ -62,9 +61,6 @@ function Get-AreaOfCircle {
     }
 }
 
-Get-AreaOfCircle -Radius 22
-
-
 ######################################################
 ######################################################
 #### Get-VolumeOfSphere function
@@ -90,9 +86,6 @@ function Get-VolumeOfSphere {
         Write-Output -InputObject $volume
     }
 }
-
-Get-VolumeOfSphere -Radius 8
-
 
 ######################################################
 ######################################################
@@ -123,9 +116,6 @@ function Get-VolumeOfCylinder {
     }
 }
 
-Get-VolumeOfCylinder -Height 10 -Radius 5
-
-
 ######################################################
 ######################################################
 #### Get-Factorial function
@@ -152,5 +142,14 @@ function Get-Factorial {
     }
 }
 
-Get-Factorial -Number 9
+# Testing each function:
 
+Get-TriangleMissingLength -SideA 3.1 -SideB 4.9921 -Angle 90.03
+
+Get-AreaOfCircle -Radius 22
+
+Get-VolumeOfSphere -Radius 8
+
+Get-VolumeOfCylinder -Height 10 -Radius 5
+
+Get-Factorial -Number 9
